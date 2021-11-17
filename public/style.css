@@ -4,11 +4,15 @@ body {
    font-family: courier new;
 }
 
-/*.headliner {
+.headliner {
 	padding: 5px 10px;
 	margin: 5px 5px;
-	position: fixed;
-}*/
+	position: absolute;
+}
+
+header {
+	overflow: hidden;
+}
 
 #headimg {
 	width: 100%;
