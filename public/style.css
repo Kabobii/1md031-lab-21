@@ -30,10 +30,32 @@ header {
    color: white;
 }
 
-.burgerwrapper {
-	margin: 5px 50px;
-	padding: 15px;
+.wrapper {
+     display: grid;
+     grid-gap: 10px;
+     grid-template-columns: 33% 33% 33%;
+     background-color: black;
+     color: white;
 }
+
+.burger {
+	
+	padding: 15px;
+	background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 150%;
+}
+
+ .pixel {
+ 	grid-column: 1;
+ }
+ .cartoon {
+ 	grid-column: 2;
+ }
+ .alien {
+ 	grid-column: 3;
+ }
 
 #burgers {
 	background-color: black;
@@ -56,6 +78,6 @@ button {
 	margin: 10px 0px;
 }
 button:hover {
-   background: blue;
+   background: cornflowerblue;
    cursor: alias;
 }
