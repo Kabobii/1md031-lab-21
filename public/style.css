@@ -1,1 +1,19 @@
-/*empty*/
+
+
+body {
+   font-family: courier new;
+}
+
+.ingredients {
+   color: black;
+}
+
+#lactose {
+   text-transform: uppercase;
+}
+#gluten {
+   text-transform: uppercase;
+}
+#unknown {
+   text-transform: uppercase;
+}
