@@ -5,15 +5,18 @@ body {
 }
 
 .ingredients {
-   color: black;
+   color: white;
+}
+#burgers {
+	background-color: black;
 }
 
 #lactose {
-   text-transform: uppercase;
+   font-weight: bold;
 }
 #gluten {
-   text-transform: uppercase;
+   font-weight: bold;
 }
 #unknown {
-   text-transform: uppercase;
+   font-weight: bold;
 }
