@@ -33,6 +33,7 @@ header {
 .wrapper {
      display: grid;
      grid-gap: 10px;
+     grid-template-rows: 30% 60%;
      grid-template-columns: 33% 33% 33%;
      background-color: black;
      color: white;
@@ -46,15 +47,21 @@ header {
     border-radius: 5px;
     font-size: 150%;
 }
+.head {
+	grid-column: 1 / span 2;
+}
 
  .pixel {
  	grid-column: 1;
+ 	grid-row: 2 ;
  }
  .cartoon {
  	grid-column: 2;
+ 	grid-row: 2 ;
  }
  .alien {
  	grid-column: 3;
+ 	grid-row: 2 ;
  }
 
 #burgers {
