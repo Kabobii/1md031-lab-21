@@ -7,6 +7,12 @@ body {
 .ingredients {
    color: white;
 }
+
+.burgerwrapper {
+	margin: 5px 50px;
+	padding: 15px;
+}
+
 #burgers {
 	background-color: black;
 }
@@ -21,6 +27,9 @@ body {
    font-weight: bold;
 }
 
+button {
+	margin: 10px 0px;
+}
 button:hover {
    background: blue;
    cursor: alias;
