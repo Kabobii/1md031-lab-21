@@ -7,7 +7,12 @@ body {
 .headliner {
 	padding: 5px 10px;
 	margin: 5px 5px;
+	
+}
+
+.headline {
 	position: absolute;
+	margin: 10px 100px;
 }
 
 header {
@@ -16,9 +21,9 @@ header {
 
 #headimg {
 	width: 100%;
-	height: 200px;
+	height: 300px;
 	opacity: 70%;
-		margin-top: -100%;
+		/*margin-top: -100%;*/
 }
 
 .ingredients {
