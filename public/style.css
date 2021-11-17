@@ -7,12 +7,12 @@ body {
 .headliner {
 	padding: 5px 10px;
 	margin: 5px 5px;
-	
 }
 
-.headline {
+#headline {
 	position: absolute;
 	margin: 10px 100px;
+	margin-top: -290px;
 }
 
 header {
