@@ -20,3 +20,8 @@ body {
 #unknown {
    font-weight: bold;
 }
+
+button:hover {
+   background: blue;
+   cursor: alias;
+}
