@@ -169,4 +169,105 @@ export default {
     height: 300px;
     background-color: red;
   }
+  
+  
+
+body {
+   font-family: courier new;
+}
+
+.headliner {
+    padding: 5px 10px;
+    margin: 5px 5px;
+}
+
+#headline {
+    position: absolute;
+    margin: 10px 100px;
+    margin-top: -290px;
+    font-weight: bold;
+    font-size: 5em;
+    text-align: center;
+}
+
+header {
+    overflow: hidden;
+}
+
+#headimg {
+    width: 100%;
+    height: 300px;
+    opacity: 50%;
+        /*margin-top: -100%;*/
+}
+
+.ingredients {
+   color: white;
+}
+
+.wrapper {
+     display: grid;
+     grid-gap: 10px;
+     grid-template-rows: 30% 60%;
+     grid-template-columns: 33% 33% 33%;
+     background-color: black;
+     color: white;
+}
+
+.burger {
+    
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 150%;
+}
+.head {
+    grid-column: 1 / span 2;
+}
+
+ .pixel {
+    grid-column: 1;
+    grid-row: 2 ;
+ }
+ .cartoon {
+    grid-column: 2;
+    grid-row: 2 ;
+ }
+ .alien {
+    grid-column: 3;
+    grid-row: 2 ;
+ }
+
+#burgers {
+    background-color: black;
+    border: 2px dashed yellow;
+    padding: 5px 10px;
+    margin: 5px 5px;
+}
+
+#contact {
+    border: 2px dashed black;
+    padding: 5px 10px;
+    margin: 5px 5px;
+}
+
+#lactose {
+   font-weight: bold;
+}
+#gluten {
+   font-weight: bold;
+}
+#unknown {
+   font-weight: bold;
+}
+
+button {
+    margin: 10px 0px;
+}
+button:hover {
+   background: cornflowerblue;
+   cursor: alias;
+}
+  
 </style>
