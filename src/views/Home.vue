@@ -16,6 +16,22 @@ import io from 'socket.io-client'
 
 const socket = io();
 
+function MenuItem(name, lactose, gluten, imgUrl, prop1, prop2, prop3, prop4) {
+		this.name = name;
+		this.lactose = lactose;
+		this.gluten = gluten;
+		this.imgUrl = imgUrl;
+		this.prop1 = prop1;
+		this.prop2 = prop2;
+		this.prop3 = prop3;
+		this.prop4 = prop4;
+		}
+		
+		const burgerArray = [new MenuItem("The Pixel Burger", true, true, "/img/pixelburger.png", "250x237 pixels", "Contains 100 pixel beef", "Contains pixel", "Optional:"),
+		new MenuItem("The Cartoon Burger", true, true, "/img/cartoonburger.webp", "Completely made up", "100% of cartoon beef", "Contains cartoon", "Contains cartoon"),
+		new MenuItem("The Alien Burger", false, false, "/img/alienburger.jpg", "An &copy;Aether Burger Inc. Classic!", "Found in the aether", "Ingredients unknown")];
+		console.log(burgerArray);
+
 export default {
   name: 'Home',
   components: {
