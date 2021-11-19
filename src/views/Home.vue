@@ -83,10 +83,12 @@
 <script>
 import Burger from '../components/Burger.vue'
 import io from 'socket.io-client'
+import menu from '../assets/menu.json'
+
 
 const socket = io();
 
-function MenuItem(name, lactose, gluten, imgUrl, prop1, prop2, prop3, prop4) {
+/*function MenuItem(name, lactose, gluten, imgUrl, prop1, prop2, prop3, prop4) {
 		this.name = name;
 		this.lactose = lactose;
 		this.gluten = gluten;
@@ -100,7 +102,7 @@ function MenuItem(name, lactose, gluten, imgUrl, prop1, prop2, prop3, prop4) {
 		const burgerArray = [new MenuItem("The Pixel Burger", true, true, "/img/pixelburger.png", "250x237 pixels", "89% of pixel beef", "Contains pixel lactose", "Optional: gluten free"),
 		new MenuItem("The Cartoon Burger", true, true, "/img/cartoonburger.webp", "Completely made up", "100% of cartoon beef", "Contains cartoon lactose", "Contains cartoon gluten"),
 		new MenuItem("The Alien Burger", false, false, "/img/alienburger.jpg", "An &copy;Aether Burger Inc. Classic!", "Found in the aether", "Ingredients unknown")];
-		console.log();
+		console.log();*/
 
 export default {
   name: 'Home',
@@ -109,7 +111,7 @@ export default {
   },
   data: function () {
     return {
-      burgers: burgerArray
+      burgers: menu
     }
   },
   methods: {
@@ -185,8 +187,7 @@ header {
     grid-gap: 10px;
     grid-template-columns: auto auto auto;
     }
-    
-    background: black;
+
 
 #contact {
     border: 2px dashed black;
