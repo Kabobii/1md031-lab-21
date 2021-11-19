@@ -1,8 +1,6 @@
 <template>
   
-  <div id="map" v-on:click="addOrder">
-    click here
-  </div>
+
   
      <header class="headliner">
          <img src="/img/topimage.jpg" id="headimg">
@@ -36,6 +34,12 @@
 			<label for="E-mail">E-mail</label><br>
             <input type="email" id="email" v-model="mail" required="required" placeholder="E-mail address">
 		</p>
+           <div id="mapWrapper">
+           <div id="map" v-on:click="addOrder">
+             click here
+           </div>
+           </div>
+
 		<p>
             <label for="Street">Street</label><br>
             <input type="text" id="streetname" v-model="streetnr" placeholder="Street name">
@@ -149,12 +153,18 @@ export default {
 
 <style>
   #map {
-    width: 300px;
-    height: 300px;
-    background-color: red;
+    width: 1920px;
+    height: 1078px;
+    background: url("/img/polacks.jpg");
   }
   
-  
+  #mapWrapper {
+    width: 90vw;
+    height: 40vw;
+    position: relative;
+    left: 2%;
+    overflow: scroll;
+  }
 
 body {
    font-family: courier new;

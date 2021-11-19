@@ -13,15 +13,16 @@
             <li>{{burger.prop3}}</li>
             <li>{{burger.prop4}}</li>
          </ul><br>
-         <ul>
-           <li>{{ amountOrdered }}</li>
-         </ul>
+
         <button type="submit" v-on:click="addBurger" id="plus">
           +
         </button>
         <button type="submit" v-on:click="removeBurger" id="minus">
           -
         </button>
+
+          <h4>{{ amountOrdered }}</h4>
+
       </div>
   
 </template>
