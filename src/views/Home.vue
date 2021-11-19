@@ -118,6 +118,9 @@ export default {
     return {
       burgers: menu,
       orderedBurgers: {},
+      location: { x:0,
+                  y:0
+      },
       fulln: "",
       mail: "",
       streetnr: "",
