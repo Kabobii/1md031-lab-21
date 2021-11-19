@@ -9,22 +9,21 @@
          <h1 id="headline">Welcome to Digital Burger's</h1>
 		
      </header>
-   <div>
-    Burgers here
-    <Burger v-for="burger in burgers"
+   
+   <main>
+   
+      <section class="burgers">
+         <h2>Select Burger</h2>
+         
+     <div class="burgermenu">
+       
+       <Burger v-for="burger in burgers"
             v-bind:burger="burger" 
             v-bind:key="burger.name"/>
-   </div>
-   <main>
-      <section class="ingredients" id="burgers">
-      <div class="wrapper">
-      <div class="burger head">
-         <h2>Select Burger</h2>
-         <span>This is where you execute burger</span><br>
-         </div>
-         
-		</div>
+     </div>
+
       </section>
+      
       <section id="contact">
          <h2>Customer Information</h2><span>This is where you provide some info about yourself</span><br>
          <form>
@@ -169,34 +168,25 @@ header {
         /*margin-top: -100%;*/
 }
 
-.ingredients {
-   color: white;
-}
 
 
-.burger {
-    
-    padding: 15px;
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-    font-size: 150%;
-    
-}
-.head {
-    grid-column: 1 / span 2;
-}
 
 
-#burgers {
-    display:grid;
-    grid-gap: 10px;
-    grid-template-columns: auto auto auto;
-    background-color: black;
+.burgers {
+    background: black;
     border: 2px dashed yellow;
     padding: 5px 10px;
     margin: 5px 5px;
+    color: white;
 }
+
+.burgermenu {
+    display:grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto;
+    }
+    
+    background: black;
 
 #contact {
     border: 2px dashed black;

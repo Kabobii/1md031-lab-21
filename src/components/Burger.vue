@@ -29,13 +29,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-.burger {
-     display: grid;
-     grid-gap: 10px;
-     grid-template-columns: auto auto auto;
-     background: black;
-     color: white;
-}
+
  .imgBurg {
      height: 150px;
      width: 200px;
