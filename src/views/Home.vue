@@ -19,7 +19,8 @@
        
        <Burger v-for="burger in burgers"
             v-bind:burger="burger" 
-            v-bind:key="burger.name"/>
+            v-bind:key="burger.name"
+               v-on:orderedBurger="addToOrder($event)"/>
      </div>
 
       </section>
@@ -112,6 +113,7 @@ export default {
   data: function () {
     return {
       burgers: menu,
+      orderedBurgers: {},
       fulln: "",
       mail: "",
       streetnr: "",
@@ -121,6 +123,10 @@ export default {
     }
   },
   methods: {
+    addToOrder: function (event) {
+      this.orderedBurgers[event.name] = event.amount;
+      console.log(this.orderedBurgers)
+    },
     getOrderNumber: function () {
       return Math.floor(Math.random()*100000);
     },
