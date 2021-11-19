@@ -1,6 +1,6 @@
 <template>
   <div>
-    Burgers
+    Burgers here
     <Burger v-for="burger in burgers"
             v-bind:burger="burger" 
             v-bind:key="burger.name"/>
@@ -130,10 +130,10 @@ function MenuItem(name, lactose, gluten, imgUrl, prop1, prop2, prop3, prop4) {
 		this.prop4 = prop4;
 		}
 		
-		const burgerArray = [new MenuItem("The Pixel Burger", true, true, "/img/pixelburger.png", "250x237 pixels", "Contains 100 pixel beef", "Contains pixel", "Optional:"),
-		new MenuItem("The Cartoon Burger", true, true, "/img/cartoonburger.webp", "Completely made up", "100% of cartoon beef", "Contains cartoon", "Contains cartoon"),
+		const burgerArray = [new MenuItem("The Pixel Burger", true, true, "/img/pixelburger.png", "250x237 pixels", "89% of pixel beef", "Contains pixel lactose", "Optional: gluten free"),
+		new MenuItem("The Cartoon Burger", true, true, "/img/cartoonburger.webp", "Completely made up", "100% of cartoon beef", "Contains cartoon lactose", "Contains cartoon gluten"),
 		new MenuItem("The Alien Burger", false, false, "/img/alienburger.jpg", "An &copy;Aether Burger Inc. Classic!", "Found in the aether", "Ingredients unknown")];
-		console.log(burgerArray);
+		console.log();
 
 export default {
   name: 'Home',
