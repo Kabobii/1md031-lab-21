@@ -29,23 +29,23 @@
          <form>
          <p>
             <label for="fullname">First</label><br>
-            <input type="text" id="fullname" name="fn" required="required" placeholder="First- and Last name">
+            <input type="text" id="fullname" v-model="fn" required="required" placeholder="First- and Last name">
 		</p>
 		<p>
 			<label for="E-mail">E-mail</label><br>
-            <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+            <input type="email" id="email" v-model="em" required="required" placeholder="E-mail address">
 		</p>
 		<p>
             <label for="Street">Street</label><br>
-            <input type="text" id="streetname" name="sn" placeholder="Street name">
+            <input type="text" id="streetname" v-model="sn" placeholder="Street name">
 		</p>
 		<p>
             <label for="House">House</label><br>
-            <input type="number" id="housenumber" name="hn" placeholder="House number">
+            <input type="number" id="housenumber" v-model="hn" placeholder="House number">
 		</p>
 		<p>
             <label for="payment">Payment options</label><br>
-            <select id="payment" name="pym">
+            <select id="payment" v-model="pym">
                 <option>Swish</option>
                 <option>Credit card</option>
                 <option>Invoice</option>
@@ -54,15 +54,15 @@
 		</p>
 		<p>
             <label for="Gender">Gender</label><br>
-            <input type="radio" id="gender" name="ge" value="Alien">
+            <input type="radio" id="gender" v-model="ge" value="Alien">
             <label for="Gender">Alien</label><br>
-            <input type="radio" id="gender" name="ge" value="Female">
+            <input type="radio" id="gender" v-model="ge" value="Female">
             <label for="Gender">Female</label><br>
-            <input type="radio" id="gender" name="ge" value="Male">
+            <input type="radio" id="gender" v-model="ge" value="Male">
             <label for="Gender">Male</label><br>
-            <input type="radio" id="gender" name="ge" value="Non-binary">
+            <input type="radio" id="gender" v-model="ge" value="Non-binary">
             <label for="Gender">Non-binary</label><br>
-            <input type="radio" id="gender" name="ge" value="Undefined">
+            <input type="radio" id="gender" v-model="ge" value="Undefined">
             <label for="Gender">Undefined</label><br>
 		</p>
 		</form>

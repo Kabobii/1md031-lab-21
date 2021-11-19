@@ -1,0 +1,31 @@
+[
+  {
+    "name": "The Pixel Burger",
+    "lactose": true,
+    "gluten": true,
+    "img": "/../img/pixelburger.png",
+    "prop1": "250x237 pixels",
+    "prop2": "89% of pixel beef",
+    "prop3": "Contains pixel lactose",
+    "prop4": "Optional: gluten free"
+  },
+  {
+    "name": "The Cartoon Burger",
+    "lactose": true,
+    "gluten": true,
+    "img": "/../img/cartoonburger.webp",
+    "prop1": "Completely made up",
+    "prop2": "100% of cartoon beef",
+    "prop3": "Contains cartoon lactose",
+    "prop4": "Contains cartoon gluten"
+  },
+  {
+    "name": "The Alien Burger",
+    "lactose": false,
+    "gluten": false,
+    "img": "/../img/alienburger.jpg",
+    "prop1": "An &copy;Aether Burger Inc. Classic!",
+    "prop2": "Found in the aether",
+    "prop3": "Ingredients unknown"
+  }
+]
