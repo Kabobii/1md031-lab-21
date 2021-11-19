@@ -1,7 +1,7 @@
 <template>
   
-      <div class="wrapper">
-      <div class="burger pixel cartoon alien">
+   <div class="wrapper">
+      <div class="burger">
          <h3>{{ burger.name }}</h3>
          
          
@@ -36,6 +36,8 @@ export default {
      grid-template-columns: 33% 33% 33%;
      background: black;
      color: white;
+     height: 150px;
+     width: 200px;
 }
 
 

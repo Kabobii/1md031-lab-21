@@ -21,40 +21,7 @@
          <h2>Select Burger</h2>
          <span>This is where you execute burger</span><br>
          </div>
-         <div class="burger pixel">
-         <!-- Första burgarn -->
-         <h3>The Pixel Burger</h3><img src="/img/pixelburger.png"
-         alt="A pixel burger" title="A pixel burger" style="width: 200px;height: 150px;">
          
-         <ul>
-            <li>250x237 pixels</li>
-            <li>Contains 100 pixel beef</li>
-            <li>Contains pixel <span id="lactose">lactose</span></li>
-            <li>Optional: <span id="gluten">Gluten free</span></li>
-		</ul><br>
-		</div>
-		<div class="burger cartoon">
-		<!-- Andra burgarn -->
-         <h3>The Cartoon Burger</h3><img src="/img/cartoonburger.webp"
-         alt="A cartoon burger" title="A cartoon burger" style="width: 200px;height: 150px;">
-         <ul>
-            <li>Completely made up</li>
-            <li>100% of cartoon beef</li>
-            <li>Contains cartoon <span id="lactose">lactose</span></li>
-            <li>Contains cartoon <span id="gluten">gluten</span></li>
-		</ul><br>
-		</div>
-		<div class="burger alien">
-		<!-- Tredje burgarn -->
-		<h3>The Alien Burger</h3><img src="/img/alienburger.jpg"
-         alt="An alien burger" title="An alien burger" style="width: 200px;">
-         
-         <ul>
-            <li>An &copy;Aether Burger Inc. Classic!</li>
-            <li>Found in the aether</li>
-            <li>Ingredients <span id="unknown">unknown</span></li>
-		</ul><br>
-		</div>
 		</div>
       </section>
       <section id="contact">
