@@ -1,11 +1,11 @@
 <template>
   
-   <div class="wrapper">
+   
       <div class="burger">
          <h3>{{ burger.name }}</h3>
          
          
-             <img v-bind:src="burger.imgUrl">
+             <img v-bind:src="burger.imgUrl" class="imgBurg">
          
          <ul>
             <li>{{burger.prop1}}</li>
@@ -14,7 +14,7 @@
             <li>{{burger.prop4}}</li>
          </ul><br>
      </div>
-  </div>
+  
 </template>
 
 <script>
@@ -29,40 +29,17 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-.wrapper {
+.burger {
      display: grid;
      grid-gap: 10px;
-     grid-template-rows: 30% 60%;
-     grid-template-columns: 33% 33% 33%;
+     grid-template-columns: auto auto auto;
      background: black;
      color: white;
+}
+ .imgBurg {
      height: 150px;
      width: 200px;
-}
-
-
-.burger {
-    padding: 15px;
-    background: red;
-    color: white;
-    border-radius: 5px;
-    font-size: 150%;
-}
-
- .pixel {
-    grid-column: 1;
-    grid-row: 2 ;
- }
- .cartoon {
-    grid-column: 2;
-    grid-row: 2 ;
- }
- .alien {
-    grid-column: 3;
-    grid-row: 2 ;
- }
- 
-
+     }
 
 #lactose {
    font-weight: bold;

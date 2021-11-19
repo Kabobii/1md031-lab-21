@@ -1,10 +1,5 @@
 <template>
-  <div>
-    Burgers here
-    <Burger v-for="burger in burgers"
-            v-bind:burger="burger" 
-            v-bind:key="burger.name"/>
-  </div>
+  
   <div id="map" v-on:click="addOrder">
     click here
   </div>
@@ -13,7 +8,13 @@
          <img src="/img/topimage.jpg" id="headimg">
          <h1 id="headline">Welcome to Digital Burger's</h1>
 		
-   </header>
+     </header>
+   <div>
+    Burgers here
+    <Burger v-for="burger in burgers"
+            v-bind:burger="burger" 
+            v-bind:key="burger.name"/>
+   </div>
    <main>
       <section class="ingredients" id="burgers">
       <div class="wrapper">
@@ -172,14 +173,6 @@ header {
    color: white;
 }
 
-.wrapper {
-     display: grid;
-     grid-gap: 10px;
-     grid-template-rows: 30% 60%;
-     grid-template-columns: 33% 33% 33%;
-     background-color: black;
-     color: white;
-}
 
 .burger {
     
@@ -188,25 +181,17 @@ header {
     color: white;
     border-radius: 5px;
     font-size: 150%;
+    
 }
 .head {
     grid-column: 1 / span 2;
 }
 
- .pixel {
-    grid-column: 1;
-    grid-row: 2 ;
- }
- .cartoon {
-    grid-column: 2;
-    grid-row: 2 ;
- }
- .alien {
-    grid-column: 3;
-    grid-row: 2 ;
- }
 
 #burgers {
+    display:grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto;
     background-color: black;
     border: 2px dashed yellow;
     padding: 5px 10px;
