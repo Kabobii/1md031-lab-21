@@ -67,7 +67,7 @@
 		</p>
 		</form>
       </section>
-      <button type="submit">
+      <button v-on:click="subbutton" type="submit">
         <img src="/img/subburger.jpg"
         alt="Sub burger" title="Sub burger" style="width: 20px;height:20px;">
         Submit order
@@ -118,7 +118,6 @@ export default {
       housenr: "",
       payme: "",
       genders: ""
-
     }
   },
   methods: {
@@ -134,6 +133,9 @@ export default {
                                 orderItems: ["Beans", "Curry"]
                               }
                  );
+    },
+    subbutton: function() {
+      console.log(this.$data);
     }
   }
 }
@@ -200,16 +202,6 @@ header {
     border: 2px dashed black;
     padding: 5px 10px;
     margin: 5px 5px;
-}
-
-#lactose {
-   font-weight: bold;
-}
-#gluten {
-   font-weight: bold;
-}
-#unknown {
-   font-weight: bold;
 }
 
 button {
