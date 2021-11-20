@@ -38,6 +38,7 @@
            <div id="map" v-on:click="addOrder">
              click here
            </div>
+
            </div>
 
 		<p>
@@ -165,7 +166,7 @@ export default {
     width: 90vw;
     height: 40vw;
     position: relative;
-    left: 2%;
+    left: 3%;
     overflow: scroll;
   }
 
@@ -174,14 +175,13 @@ body {
 }
 
 .headliner {
-    padding: 5px 10px;
-    margin: 5px 5px;
+    padding: 5px 8px;
 }
 
 #headline {
     position: absolute;
     margin: 10px 100px;
-    margin-top: -290px;
+    margin-top: -350px;
     font-weight: bold;
     font-size: 5em;
     text-align: center;
@@ -193,13 +193,10 @@ header {
 
 #headimg {
     width: 100%;
-    height: 300px;
+    height: 350px;
     opacity: 50%;
         /*margin-top: -100%;*/
 }
-
-
-
 
 
 .burgers {

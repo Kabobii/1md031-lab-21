@@ -13,15 +13,17 @@
             <li>{{burger.prop3}}</li>
             <li>{{burger.prop4}}</li>
          </ul><br>
-
+<div class="orderButtons">
         <button type="submit" v-on:click="addBurger" id="plus">
           +
         </button>
+        <h4>{{ amountOrdered }}</h4>
         <button type="submit" v-on:click="removeBurger" id="minus">
           -
         </button>
+</div>
 
-          <h4>{{ amountOrdered }}</h4>
+
 
       </div>
   
@@ -65,7 +67,26 @@ export default {
  .imgBurg {
      height: 150px;
      width: 200px;
+     margin-left: 5px;
      }
+
+ .orderButtons {
+   display: grid;
+   grid-gap: 25px;
+   grid-template-columns: 20px 20px 20px;
+   margin: 0em 2em;
+ }
+
+ button {
+   width: 40px;
+   height: 40px;
+ }
+
+ h4 {
+   text-align: end;
+   margin-left: 15px;
+ }
+
 
 #lactose {
    font-weight: bold;
