@@ -130,10 +130,19 @@ export default {
     getOrderNumber: function () {
       return Math.floor(Math.random()*100000);
     },
-    setLocation: function () {
+    setLocation: function (event) {
       const setPos = event.target.getBoundingClientRect();
       this.location.x = event.clientX-setPos.left-10;
       this.location.y = event.clientY-setPos.top-10;
+    },
+    subbutton: function() {
+      console.log(this.$data);
+      socket.emit("addOrder", { orderId: this.getOrderNumber(),
+                                details: { x: this.location.x,
+                                           y: this.location.y },
+                             orderItems: ["Beans", "Curry"]
+          }
+      );
     },
 
 
@@ -154,9 +163,7 @@ export default {
          }
       )*/
     },
-    subbutton: function() {
-      console.log(this.$data);
-    }
+
   }
 }
 </script>
