@@ -28,7 +28,7 @@
          <form>
          <p>
             <label for="fullname">First</label><br>
-            <input type="text" id="fullname" v-model="fulln" required="required" placeholder="First- and Last name">
+            <input type="text" id="fullname" v-model="fullname" required="required" placeholder="First- and Last name">
 		</p>
 		<p>
 			<label for="E-mail">E-mail</label><br>
@@ -116,7 +116,7 @@ export default {
       location: { x:0,
                   y:0
       },
-      fulln: "",
+      fullname: "",
       mail: "",
       payme: "",
       genders: ""
@@ -140,7 +140,11 @@ export default {
       socket.emit("addOrder", { orderId: this.getOrderNumber(),
                                 details: { x: this.location.x,
                                            y: this.location.y },
-                             orderItems: ["Beans", "Curry"]
+                             orderItems: this.orderedBurgers,
+                            contactInfo: {fullname: this.fullname,
+                                              mail: this.mail,
+                                             payme: this.payme,
+                                           genders: this.genders}
           }
       );
     },
