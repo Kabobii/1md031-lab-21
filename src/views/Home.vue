@@ -136,7 +136,6 @@ export default {
       this.location.y = event.clientY-setPos.top-10;
     },
     subbutton: function() {
-      console.log(this.$data);
       socket.emit("addOrder", { orderId: this.getOrderNumber(),
                                 details: { x: this.location.x,
                                            y: this.location.y },

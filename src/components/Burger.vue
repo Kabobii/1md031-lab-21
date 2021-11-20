@@ -50,6 +50,9 @@ export default {
     },
     removeBurger: function () {
       this.amountOrdered--;
+      if (this.amountOrdered < 0) {
+        this.amountOrdered = 0;
+      }
       this.$emit('orderedBurger', { name:   this.burger.name,
             amount: this.amountOrdered
           }
