@@ -35,20 +35,14 @@
             <input type="email" id="email" v-model="mail" required="required" placeholder="E-mail address">
 		</p>
            <div id="mapWrapper">
-           <div id="map" v-on:click="addOrder">
-             click here
+           <div id="map" v-on:click="setLocation">
+             <div v-bind:style="{ left: location.x + 'px',
+                                   top: location.y + 'px' }">
+             T
+             </div>
+           </div>
            </div>
 
-           </div>
-
-		<p>
-            <label for="Street">Street</label><br>
-            <input type="text" id="streetname" v-model="streetnr" placeholder="Street name">
-		</p>
-		<p>
-            <label for="House">House</label><br>
-            <input type="number" id="housenumber" v-model="housenr" placeholder="House number">
-		</p>
 		<p>
             <label for="payment">Payment options</label><br>
             <select id="payment" v-model="payme">
@@ -124,8 +118,6 @@ export default {
       },
       fulln: "",
       mail: "",
-      streetnr: "",
-      housenr: "",
       payme: "",
       genders: ""
     }
@@ -138,6 +130,13 @@ export default {
     getOrderNumber: function () {
       return Math.floor(Math.random()*100000);
     },
+    setLocation: function () {
+      const setPos = event.target.getBoundingClientRect();
+      this.location.x = event.clientX-setPos.left-10;
+      this.location.y = event.clientY-setPos.top-10;
+    },
+
+
     addOrder: function (event) {
       var offset = {x: event.currentTarget.getBoundingClientRect().left,
                     y: event.currentTarget.getBoundingClientRect().top};
@@ -147,6 +146,13 @@ export default {
                                 orderItems: ["Beans", "Curry"]
                               }
                  );
+      /*var setPos = event.target.getBoundingClientRect();
+      this.location.x = event.clientX-setPos.left-10;
+      this.location.y = event.clientY-setPos.top-10;
+      socket.emit("addOrder", { details: { x: this.location.x,
+                                           y: this.location.y}
+         }
+      )*/
     },
     subbutton: function() {
       console.log(this.$data);
@@ -160,15 +166,19 @@ export default {
     width: 1920px;
     height: 1078px;
     background: url("/img/polacks.jpg");
+    position: relative;
+  }
+  #map div {
+    position: absolute;
   }
   
   #mapWrapper {
     width: 90vw;
     height: 40vw;
-    position: relative;
     left: 3%;
     overflow: scroll;
   }
+
 
 body {
    font-family: courier new;
