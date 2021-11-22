@@ -1,3 +1,4 @@
+
 [
   {
     "name": "The Pixel Burger",
@@ -26,6 +27,7 @@
     "imgUrl": "/../img/alienburger.jpg",
     "prop1": "An &copy;Aether Burger Inc. Classic!",
     "prop2": "Found in the aether",
-    "prop3": "Ingredients unknown"
+    "prop3": "Ingredients unknown",
+    "prop4": "Half price if you are alien"
   }
 ]

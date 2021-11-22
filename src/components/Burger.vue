@@ -1,5 +1,5 @@
 <template>
-  
+  /*Nils Carlberg*/
    
       <div class="burger">
          <h3>{{ burger.name }}</h3>
